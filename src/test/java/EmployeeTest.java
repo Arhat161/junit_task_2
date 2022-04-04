@@ -45,7 +45,7 @@ public class EmployeeTest {
 
     @Test
     @DisplayName("Test \"Employee\" class constructor, using 'Hamcrest' ... ")
-    public void validEmployeeHamcrestTest (TestInfo validEmployeeHamcrestTestInfo) {
+    public void validEmployeeHamcrestTest(TestInfo validEmployeeHamcrestTestInfo) {
         assertThat(employee, instanceOf(Employee.class));
         System.out.println(validEmployeeHamcrestTestInfo.getDisplayName() + " complete!");
     }
@@ -53,7 +53,7 @@ public class EmployeeTest {
     @ParameterizedTest
     @DisplayName("Test properties object 'employee' of class 'Employee', using 'Hamcrest' ...")
     @ValueSource(strings = {"id", "firstName", "lastName", "country", "age"})
-    public void hasPropertyEmployeeHamcrestTest (String property) {
+    public void hasPropertyEmployeeHamcrestTest(String property) {
         assertThat(employee, hasProperty(property));
         System.out.println("Test hasProperty '" + property + "' for object 'employee' of class 'Employee' complete!");
     }

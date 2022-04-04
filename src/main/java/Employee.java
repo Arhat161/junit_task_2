@@ -59,7 +59,7 @@ public class Employee {
         if (age > 0) {
             this.age = age;
         } else {
-            System.out.println("Incorrect value '"+ age + "' of 'age' !");
+            System.out.println("Incorrect value '" + age + "' of 'age' !");
         }
     }
 
